@@ -8,19 +8,6 @@
     font-weight: 400;
     font-style: normal;
     transition: .5s;
-    /* background-color: var(--cor-00); */
-}
-
-*::-webkit-scrollbar {
-    background-color: var(--cor-03);
-    width: 10px;
-    height: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: var(--cor-01);
-    border: 2px solid var(--cor-03);
-    border-radius: 20px;
 }
 
 html{
@@ -28,173 +15,45 @@ html{
 }
 
 :root{
-    --cor-00: rgba(0, 0, 255, .25);
     --cor-01: #224b05;
-    --cor-02: #ffffff;
-    --cor-03: #60c419;
+    --cor-02: #c7c7c7;
+    --cor-03: #000000;
 }
 
 body{
-    background-color: var(--cor-03);
-}
-
-.banner{
-    width: 100%;
-    height: 100vh;
-}
-.banner::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(15, 40, 5, .85);
-}
-
-.banner__imagem{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.banner__titulo{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50vh;
-    left: 50vw;
-    text-wrap: nowrap;
-    color: var(--cor-03);
-    font-size: 40px;
-    animation: animacao-brilhar 5s linear infinite;
-    text-shadow: 0 0 7.5px var(--cor-03);
-    z-index: 1;
-}
-@keyframes animacao-brilhar {
-    25%{text-shadow: 0 0 5px var(--cor-03); font-size: 38px;}
-    75%{text-shadow: 0 0 10px var(--cor-03); font-size: 42px;}
-}
-
-.banner__titulo::after{
-    content: '- Por Nícolas Felipe Ferreira Souza';
-    position: absolute;
-    bottom: -25px;
-    right: 0px;
-    color: var(--cor-02);
-    opacity: .7;
-    font-size: 15px;
-    letter-spacing: 2.5px;
-    font-style: italic;
-}
-
-.banner__icone{
-    position: absolute;
-    transform: translate(-50%, 0);
-    bottom: 50px;
-    left: 50%;
-    animation: animacao-flutuar 2s linear infinite;
-    z-index: 1;
-}
-@keyframes animacao-flutuar {
-    25%{transform: translate(-50%, 10px);}
-    75%{transform: translate(-50%, -10px);}
-}
-
-.icone__imagem{
-    width: 25px;
-    height: 25px;
-}
-
-.cabecalho {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: var(--cor-03);
-    padding: 5px;
-    border-top: 1px solid var(--cor-01);
-    border-bottom: 1px solid var(--cor-01);
-    z-index: 2;
-}
-
-.cabecalho__navegacao{
-    width: 50%;
-    padding: 5px;
-}
-
-.navegacao__links{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.links__item{
-    transform: translate(0);
-    padding: 5px 10px 2.5px 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.links__item::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -10px;
-    width: 100%;
-    height: 0px;
-    background-color: var(--cor-01);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: .25s;
-}
-.links__item:hover::before{
-    height: 40px;
-    z-index: -1;
-}
-.links__item:hover .item__link{
-    color: var(--cor-02);
-}
-
-.item__link{
-    color: var(--cor-01);
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.banner-agrinho{
-    height: 200px;
-    width: 100%;
-    background-color: var(--cor-01);   
-    display: flex;
-    padding: 10px;
-    overflow-x: scroll;
-}
-
-.banner-agrinho__imagem{
-    position: relative;
-    margin: 0 5px;
-    border-radius: 10px;
-    height: calc(100%);
-    opacity: .25;
-}
-.banner-agrinho__imagem:hover{
-    opacity: 1;
-}
-
-.principal{
-    padding: 25px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.principal__secao{
-    min-height: 100vh;
-    padding: 25px;
-    border-radius: 10px;
     background-color: var(--cor-02);
 }
 
-.secao__titulo{
-    padding: 50px 10px 10px 10px;
+header{
+    background-color: var(--cor-01);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.navegacao{
+    width: calc(100% - 150px);
+}
+
+.navegacao__links{
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navegacao__links a{
+    color: var(--cor-02);
+    text-decoration: none;
 }
