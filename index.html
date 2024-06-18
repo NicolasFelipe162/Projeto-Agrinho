@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
-    <title>Nícolas Felipe | Agrinho</title>
+    <title>Agrinho 2024</title>
 </head>
-
 <body>
-</body>
     <header>
         <div class="logo">
-            <img src="IMG/agrinho1.jpg">
+            <a href="index.html">
+                <img src="IMG/agrinho1.jpg" alt="">
+            </a>
         </div>
-        <div class="navegacao">
+        <nav class="navegacao">
             <ul class="navegacao__links">
                 <li class="links__item">
-                    <a href="">Principais</a>
-                
+                    <a href="#apresentacao">Principal</a>
                 </li>
-                <li class="links__item">
-                    <a href="">Seções</a>
-                
+                <li class="links__item" id="menu-secoes">
+                    <p>Secões</p>
+                    <ul class="item__menu">
+                        <li class="menu__secao">
+                            <a href="">A importância do plantio urbano</a>
+                        </li>
+                        <li class="menu__secao">
+                            <a href="">Dicas para plantio em pequenos espaços</a>
+                        </li>
+                        <li class="menu__secao">
+                            <a href="">Título seção</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="links__item">
                     <a href="">Sobre</a>
-                
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
+    <main>
+        <section class="primeira-secao" id="apresentacao">
+            <div class="primeira-secao__conteudo">
+                <div>
+                    <img src="IMG/agrinho7.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Ideia do projeto</h2>
+                    <p>Vivemos em uma era onde o espaço urbano cresce constantemente, e com ele surgem desafios e oportunidades únicas. A importância do plantio urbano não pode ser subestimada.</p>
+                    
+                    <p>Aqui, você encontrará temas como a compreensão dos benefícios ambientais e sociais até dicas práticas para cultivar em pequenos espaços para transformar qualquer canto da cidade em um refúgio verde.</p>
+                    
+                    <p>Espero que este projeto inspire e capacite você a fazer parte dessa transformação verde, promovendo a sustentabilidade e a beleza natural em meio ao concreto da cidade!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
