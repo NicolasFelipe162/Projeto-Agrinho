@@ -1,90 +1,145 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Agrinho 2024</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="IMG/agrinho1.jpg" alt="">
-                </a>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Agrinho 2024</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="IMG/agrinho1.jpg" alt="">
+            </a>
+        </div>
+        <nav class="navegacao">
+            <ul class="navegacao__links">
+                <li class="links__item">
+                    <a href="#apresentacao">Principal</a>
+                </li>
+                <li class="links__item" id="menu-secoes">
+                    <p>Secões</p>
+                    <ul class="item__menu">
+                        <li class="menu__secao">
+                            <a href="#importancia-plantio-urbano">A importância do plantio urbano</a>
+                        </li>
+                        <li class="menu__secao">
+                            <a href="#dicas-plantio-pequenos-espacos">Dicas para plantio em pequenos espaços</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="links__item">
+                    <a href="">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="primeira-secao" id="apresentacao">
+            <div class="primeira-secao__conteudo">
+                <h2>Ideia do projeto</h2>
+                <div>
+                    <p>Vivemos em uma era onde o espaço urbano cresce constantemente, e com ele surgem desafios e
+                        oportunidades únicas. A importância do plantio urbano não pode ser subestimada.</p>
+
+                    <p>Aqui, você encontrará temas como a compreensão dos benefícios ambientais e sociais até dicas
+                        práticas para cultivar em pequenos espaços para transformar qualquer canto da cidade em um
+                        refúgio verde.</p>
+
+                    <p>Espero que este projeto inspire e capacite você a fazer parte dessa transformação verde,
+                        promovendo a sustentabilidade e a beleza natural em meio ao concreto da cidade!</p>
+                </div>
             </div>
-            <nav class="navegacao">
-                <ul class="navegacao__links">
-                    <li class="links__item">
-                        <a href="#apresentacao">Principal</a>
+        </section>
+        <section class="segunda-secao" id="importancia-plantio-urbano">
+            <div class="segunda-secao__conteudo">
+                <h2>A importância do plantio urbano</h2>
+                <h3>Por que EU tenho que plantar? &#129300;</h3>
+
+                <p>No fundo, todos nós sabemos que devemos cuidar do nosso planeta, mas é interessante conhecer quais
+                    são, de fato, os diversos benefícios desse cuidado:</p>
+
+                <h4>Benefícios Ambientais</h4>
+
+                <p>O plantio de árvores nas cidades ajuda a melhorar a qualidade do ar. As árvores absorvem dióxido de
+                    carbono (CO2) e
+                    liberam oxigênio (O2), combatendo a poluição e melhorando a respiração. Além disso, elas ajudam a
+                    regular a temperatura,
+                    oferecendo sombra e refrescando o ambiente, o que diminui o calor nas áreas urbanas.</p>
+
+                <h4>Benefícios Sociais e Psicológicos</h4>
+
+                <p>As áreas verdes nas cidades têm um impacto positivo na saúde mental. Elas ajudam a reduzir o estresse
+                    e melhoram o
+                    bem-estar das pessoas. Parques e praças são ótimos lugares para convivência, onde as pessoas podem
+                    se encontrar, relaxar
+                    e fortalecer os laços comunitários.</p>
+
+                <h4>Benefícios Econômicos</h4>
+
+                <p>Investir em áreas verdes também traz benefícios econômicos. Terrenos com muitas árvores e plantas são
+                    mais valorizados. Além disso, as árvores podem ajudar a economizar energia, já que suas sombras
+                    diminuem a necessidade de uso de
+                    ar-condicionado nos dias quentes.</p>
+
+                <p>Vamos juntos transformar nossa cidade em um lugar mais verde e saudável!</p>
+            </div>
+        </section>
+        <section class="terceira-secao" id="dicas-plantio-pequenos-espacos">
+            <div class="terceira-secao__conteudo">
+                <h2>Dicas para o plantio em pequenos espaços</h2>
+                <!-- <p>Agora que você conhece os <a href="#importancia-plantio-urbano">benefícios de se plantar em espaços
+                        urbanos</a>, aqui vão 5 dicas que podem te ajudar a plantar algo por mais que não tenha grande
+                    espaço para isso:</p> -->
+
+                <ul class="terceira-secao__conteudo__blocos">
+                    <li>
+                        <h4>1. Espaço e plantas</h4>
+
+                        <p>Avalie onde há mais luz solar na sua casa, considere se há varanda ou janelas com espaço
+                            suficiente para vasos. Depois, escolha o que plantar de acordo com o espaço disponível e o
+                            tipo de jardim desejado (ervas, frutas, vegetais ou flores).</p>
                     </li>
-                    <li class="links__item" id="menu-secoes">
-                        <p>Secões</p>
-                        <ul class="item__menu">
-                            <li class="menu__secao">
-                                <a href="#importancia-plantio-urbano">A importância do plantio urbano</a>
-                            </li>
-                            <li class="menu__secao">
-                                <a href="#dicas-plantio-pequenos-espacos">Dicas para plantio em pequenos espaços</a>
-                            </li>
-                        </ul>
+
+                    <li>
+                        <h4>2. Materiais e solo</h4>
+
+                        <p>Após definir o que e onde plantar, escolha potes e vasos, podendo usar materiais reciclados.
+                            Adquira ou prepare um solo adequado,preferencialmente orgânico e ecológico.</p>
                     </li>
-                    <li class="links__item">
-                        <a href="">Sobre</a>
+
+                    <li>
+                        <h4>3. Plantio</h4>
+
+                        <p>Com o local, plantas e solo definidos, comece a plantar. Hortaliças como alface, cenoura e
+                            tomate crescem bem dentro de casa com a luz solar e água adequadas. Regue diariamente e
+                            forneça nutrientes e cuidados necessários.</p>
+                    </li>
+
+                    <li>
+                        <h4>4. Compostagem</h4>
+
+                        <p>Inicie a compostagem para reduzir o lixo doméstico e melhorar a qualidade do solo,
+                            beneficiando a retenção de umidade e o controle de pragas. Considere doar restos orgânicos
+                            para hortas urbanas locais.</p>
+                    </li>
+
+                    <li>
+                        <h4>5. Colheita</h4>
+
+                        <p>Com os cuidados adequados, logo você poderá colher e usar seus alimentos em receitas.
+                            Compartilhe dicas e expanda a comunidade de plantio entre amigos e familiares.</p>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="primeira-secao" id="apresentacao">
-                <div class="primeira-secao__conteudo">
-                    <div class="primeira-secao__conteudo__texto">
-                        <h2>Ideia do projeto</h2>
-                        <div>
-                            
-                            <p>Vivemos em uma era onde o espaço urbano cresce constantemente, e com ele surgem desafios e oportunidades únicas. A importância do plantio urbano não pode ser subestimada.</p>
-                            
-                            <p>Aqui, você encontrará temas como a compreensão dos benefícios ambientais e sociais até dicas práticas para cultivar em pequenos espaços para transformar qualquer canto da cidade em um refúgio verde.</p>
-                            
-                            <p>Espero que este projeto inspire e capacite você a fazer parte dessa transformação verde, promovendo a sustentabilidade e a beleza natural em meio ao concreto da cidade!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="segunda-secao" id="importancia-plantio-urbano">
-                <div class="segunda-secao__conteudo">
-                    <h2>A importância do plantio urbano</h2>
-                    <h3>Por que EU tenho que plantar? &#129300;</h3>
-                    
-                    <p>No fundo, todos nós sabemos que devemos cuidar do nosso planeta, mas é interessante conhecer quais são, de fato, os diversos benefícios desse cuidado:</p>
-                    
-                    <h4>Benefícios Ambientais</h4>
-                    
-                    <p>O plantio de árvores nas cidades ajuda a melhorar a qualidade do ar. As árvores absorvem dióxido de carbono (CO2) e
-                    liberam oxigênio (O2), combatendo a poluição e melhorando a respiração. Além disso, elas ajudam a regular a temperatura,
-                    oferecendo sombra e refrescando o ambiente, o que diminui o calor nas áreas urbanas.</p>
-                    
-                    <h4>Benefícios Sociais e Psicológicos</h4>
-                    
-                    <p>As áreas verdes nas cidades têm um impacto positivo na saúde mental. Elas ajudam a reduzir o estresse e melhoram o
-                    bem-estar das pessoas. Parques e praças são ótimos lugares para convivência, onde as pessoas podem se encontrar, relaxar
-                    e fortalecer os laços comunitários.</p>
-                    
-                    <h4>Benefícios Econômicos</h4>
-                    
-                    <p>Investir em áreas verdes também traz benefícios econômicos. Terrenos com muitas árvores e plantas são mais valorizados. Além disso, as árvores podem ajudar a economizar energia, já que suas sombras diminuem a necessidade de uso de
-                    ar-condicionado nos dias quentes.</p>
-                    
-                    <p>Vamos juntos transformar nossa cidade em um lugar mais verde e saudável!</p>
-                </div>
-            </section>
-            <section class="terceira-secao" id="dicas-plantio-pequenos-espacos">
-                <div class="terceira-secao__conteudo">
-                </div>
-            </section>
-        </main>
-        <footer>
-        </footer>
-    </body>
-    </html>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
