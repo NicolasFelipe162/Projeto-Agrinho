@@ -28,6 +28,16 @@ body{
     background-color: var(--cor-02);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--cor-04);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-02);
+    border: 2.5px solid var(--cor-04);
+    border-radius: 25px;
+}
+
 /* CABECALHO */
 header{
     position: fixed;
