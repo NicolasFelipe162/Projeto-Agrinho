@@ -12,14 +12,14 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
+            <a href="#apresentação">
                 <img src="IMG/logotipo-branco-sem-fundo.png" alt="">
             </a>
         </div>
         <nav class="navegacao">
             <ul class="navegacao__links">
                 <li class="links__item">
-                    <a href="#apresentacao">Principal</a>
+                    <a href="#principal">Principal</a>
                 </li>
                 <li class="links__item" id="menu-secoes">
                     <p>Plantio ▼</p>
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <main>
-        <section class="primeira-secao" id="apresentacao">
+        <section class="primeira-secao" id="principal">
             <div class="primeira-secao__conteudo">
                 <h2>Ideia do projeto</h2>
                 <div>
@@ -242,17 +242,23 @@
             </div>
         </section>
     </main>
-    <a href="#apresentacao" class="botao-volta-inicio">𖤂</a>
+    <a href="#principal" class="botao-volta-inicio">𖤂</a>
     <footer>
-        <h2>CONTATO</h2>
-        <ul>
-            <li>E-mail:</li>
-            <li>WhatsApp:</li>
-            <li>Instagram:</li>
-            <li>E-mail:</li>
-            <li>E-mail:</li>
-        </ul>
-        
+        <div class="footer__conteudo">
+            <div>
+                <h2>"Agrinho: do campo à cidade, colhendo oportunidades"</h2>
+            </div>
+            <div>
+                <form>
+                    <h2>Entre em contato!</h2>
+                    <input type="text" name="input-nome" id="input-nome" required>
+                    <input type="email" name="input-email" id="input-email" required>
+                    <input type="text" name="input-mensagem" id="input-mensagem" required>
+                    <button>Enviar</button>
+                    
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 
