@@ -341,24 +341,35 @@ section {
     padding-right: 25px;
 }
 
-.quarta-secao__conteudo h2 {
+.quarta-secao__conteudo div{
     font-family: var(--fonte-02);
     font-size: 42px;
-    text-transform: uppercase;
     margin-bottom: 15px;
     background-color: var(--cor-02);
     padding: 25px;
-    box-shadow: 0 0 10px 0 var(--cor-04);
-}
+    box-shadow: 0 0 10px 0 var(--cor-04);}
 
-.quarta-secao__conteudo h2:first-child {
+.quarta-secao__conteudo div:first-child{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
-.quarta-secao__conteudo h2:last-child {
+.quarta-secao__conteudo div:last-child{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.quarta-secao__conteudo h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--cor-04);
+}
+
+.quarta-secao__conteudo h3 {
+    font-family: var(--fonte-01);
+    font-size: 14px;
+    line-height: 25px;
 }
 
 .quarta-secao__conteudo__blocos {
@@ -367,14 +378,13 @@ section {
     gap: 15px;
 }
 
-.quarta-secao__conteudo__blocos>li {
+.quarta-secao__conteudo__blocos > li {
     background-color: var(--cor-02);
     padding: 25px;
     box-shadow: 0 0 10px 0 var(--cor-04);
 }
 
 .quarta-secao__conteudo__blocos h4 {
-    /* font-family: var(--fonte-02); */
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -394,11 +404,12 @@ section {
 }
 
 .quarta-secao__conteudo__blocos li ul li:hover {
-    filter: drop-shadow(0 0 5px var(--cor-01));
+    filter: drop-shadow(0 0 5px var(--cor-04));
 }
 
 .quarta-secao__conteudo__blocos li ul li:hover>img {
-    scale: 1.05;
+    scale: 1.1;
+    transform: rotate(10deg);
 }
 
 .quarta-secao__conteudo__blocos li ul li p {
@@ -406,15 +417,8 @@ section {
     text-align: center;
 }
 
-.quarta-secao__conteudo__blocos li ul li img {
-    height: 150px;
-}
-
-#imagem-garrafa-pet-cortada,
-#imagem-garrafa-pet-com-barbantes-arroelas-sem-fund,
-#horta-vertical-finalizada{
-    padding: 50px;
-    height: 250px;
+.quarta-secao__conteudo__blocos li:not(:first-child) ul li {
+    padding: 35px;
 }
 
 /* QUINTA SECAO */
@@ -446,13 +450,14 @@ section {
 
 .quinta-secao__conteudo__lista-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 25px;
 }
 
 .quinta-secao__conteudo__lista-projetos li {
-    max-width: 500px;
-    height: 200px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 250px;
     background-color: var(--cor-02);
     border-radius: 10px;
     margin: 0 auto;
@@ -460,31 +465,67 @@ section {
     display: flex;
 }
 
-/* .quinta-secao__conteudo li:hover{
-} */
-
 .quinta-secao__conteudo li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px;
 }
 
 .quinta-secao__conteudo li:hover img {
-    width: 50%;
+    width: 30%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .quinta-secao__conteudo li div {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.quinta-secao__conteudo li div span {
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .quinta-secao__conteudo li div h4 {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+}
+
+.quinta-secao__conteudo li div p {
+    line-height: 15px;
+    height: 175px;
+    overflow-y: auto;
+}
+
+.quinta-secao__conteudo li div p::-webkit-scrollbar {
+    width: 2.5px;
+    background-color: var(--cor-02);
+}
+
+.quinta-secao__conteudo li div p::-webkit-scrollbar-thumb {
+    background-color: var(--cor-04);
+    border: none;
+    border-radius: 25px;
+}
+
+.quinta-secao__conteudo li div a {
+    background-color: var(--cor-03);
+    color: var(--cor-02);
+    border-radius: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.quinta-secao__conteudo li div a:hover{
+    background-color: var(--cor-04);
 }
 
 /* SEXTA SECAO */
@@ -551,9 +592,8 @@ section {
 
 /* RODAPE */
 footer {
-    padding: 150px 50px 50px 50px;
+    padding: 100px 50px;
     background-color: var(--cor-04);
-    height: 100vh;
     font-family: var(--fonte-02);
 }
 
@@ -608,7 +648,7 @@ footer h2 {
     color: var(--cor-01);
 }
 
-.footer__conteudo form input::placeholder{
+.footer__conteudo form input::placeholder {
     color: var(--cor-03);
 }
 
