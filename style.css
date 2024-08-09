@@ -708,6 +708,15 @@ footer h2 {
 }
 
 @media screen and (max-width: 1100px) {
+    .terceira-secao__conteudo h2,
+    .quarta-secao__conteudo h2{
+        font-size: 38px;
+    }
+
+    .terceira-secao__conteudo__blocos li h4{
+        padding: 10px;
+    }
+
     #imagem-horta-06{
         height: 100px;
     }
@@ -718,6 +727,14 @@ footer h2 {
         margin-top: 25px;
     }
 
+    .quinta-secao__conteudo__lista-projetos {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .quinta-secao__conteudo__lista-projetos li {
+        min-width: 350px;
+        max-width: 350px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -854,14 +871,5 @@ footer h2 {
 @media screen and (max-width: 550px) {
     .primeira-secao__conteudo p:nth-child(2){
         display: none;
-    }
-
-    .quinta-secao__conteudo__lista-projetos {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
-
-    .quinta-secao__conteudo__lista-projetos li {
-        min-width: 350px;
-        max-width: 350px;
     }
 }
