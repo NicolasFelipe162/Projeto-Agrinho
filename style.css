@@ -24,7 +24,6 @@ html {
     color: var(--cor-04);
     font-size: 14px;
     letter-spacing: 1px;
-    /* background-color: var(--teste);    */
 }
 
 /* BODY */
@@ -44,7 +43,7 @@ body {
     border-radius: 25px;
 }
 
-/*  */
+/* ANIMAÇÃO INICIO */
 .animacao-inicio{
     position: absolute;
     top: 0;
@@ -129,10 +128,6 @@ header {
     justify-content: space-evenly;
 }
 
-/* .links__item{
-} */
-
-
 .links__item a,
 .links__item p {
     display: block;
@@ -192,9 +187,6 @@ header {
     opacity: 1;
 }
 
-/* .menu__secao{
-} */
-
 .menu__secao a {
     display: block;
     height: 100%;
@@ -210,7 +202,6 @@ header {
 section {
     padding: 150px 0 50px 0;
 }
-
 
 /* PRIMEIRA SECAO */
 .primeira-secao {
@@ -248,10 +239,6 @@ section {
 .primeira-secao__conteudo p {
     font-weight: bold;
 }
-
-/* .primeira-secao__conteudo > div{
-    color: var(--cor-02);
-} */
 
 /* SEGUNDA SECAO */
 .segunda-secao {
@@ -320,9 +307,6 @@ section {
     background-color: var(--cor-03);
 }
 
-/* .terceira-secao__conteudo{
-} */
-
 .terceira-secao__conteudo h2 {
     padding: 25px 50px;
     margin: 0 25px;
@@ -385,7 +369,7 @@ section {
 }
 
 
-/*  QUARTA SECAO */
+/* QUARTA SECAO */
 .quarta-secao {
     background-image: linear-gradient(var(--cor-03), var(--cor-04));
 }
@@ -487,8 +471,6 @@ section {
     height: 110px;
     margin: 20px 0;
 }
-
-
 
 .quarta-secao__conteudo__blocos li ul li:hover>img {
     scale: 1.1;
@@ -643,7 +625,7 @@ section {
     text-align: justify;
 }
 
-/* BOTAO */
+/* BOTAO VOLTA INICIO */
 .botao-volta-inicio {
     position: fixed;
     bottom: 50px;
@@ -772,6 +754,7 @@ footer h2 {
     font-size: 12px;
 }
 
+/* TELA 1100PX */
 @media screen and (max-width: 1100px) {
     .segunda-secao__conteudo{
         padding: 50px 25px;
@@ -806,6 +789,7 @@ footer h2 {
     }
 }
 
+/* TELA 1000PX */
 @media screen and (max-width: 1000px) {
     header{
         flex-direction: row-reverse;
@@ -840,8 +824,13 @@ footer h2 {
     .menu__secao a{
         padding: 5px;
     }
+
+    .primeira-secao{
+        background-image: url(IMG/banner-04-quadrado.png);
+    }
 }
 
+/* TELA 850PX */
 @media screen and (max-width: 850px) {
     .primeira-secao {
         padding-left: 50px;
@@ -887,9 +876,14 @@ footer h2 {
     }
 }
 
+/* TELA 700PX */
 @media screen and (max-width: 700px) {
     .animacao-inicio p{
         font-size: 50px;
+    }
+    
+    .primeira-secao{
+        background-image: url(IMG/banner-04-vertical.png);
     }
     
     .primeira-secao__conteudo p:last-child{
@@ -944,6 +938,7 @@ footer h2 {
     }
 }
 
+/* TELA 550PX */
 @media screen and (max-width: 550px) {
     .primeira-secao__conteudo p:nth-child(2){
         display: none;
