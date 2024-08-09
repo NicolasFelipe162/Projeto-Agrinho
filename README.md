@@ -14,3 +14,4 @@ Ele conta com um cabeçalho, 6 seções comconteúdo e um rodapé:
 - **Rodapé**: Conta com um formulário que simula uma comunicação por e-mail, apesar da estrutura HTML estar correta, ele não faz o envio de mensagem alguma.
 
 [Projeto final publicado no Vercel](https://projetoagrinho2024.vercel.app/)
+[Projeto final publicado no GitHub Pages](https://nicolasfelipe162.github.io/Projeto-Agrinho/)
