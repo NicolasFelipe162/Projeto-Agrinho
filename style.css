@@ -141,7 +141,7 @@ header {
     box-shadow: -10px -10px 0 var(--cor-04);
 }
 
-#menu-secoes:hover>.item__menu {
+#menu-secoes:hover > .item__menu {
     transform: translateX(-50px);
     opacity: 1;
 }
@@ -407,6 +407,35 @@ section {
     filter: drop-shadow(0 0 5px var(--cor-04));
 }
 
+#imagem-horta-01,
+#imagem-horta-02,
+#imagem-horta-03,
+#imagem-horta-06,
+#imagem-horta-09,
+#imagem-horta-10,
+#imagem-horta-11,
+#imagem-horta-12{
+    height: 150px;
+}
+
+#imagem-horta-04{
+    height: 100px;
+    margin: 25px 0;
+}
+
+#imagem-horta-05,
+#imagem-horta-07{
+    height: 110px;
+    margin-top: 40px;
+}
+
+#imagem-horta-08{
+    height: 110px;
+    margin: 20px 0;
+}
+
+
+
 .quarta-secao__conteudo__blocos li ul li:hover>img {
     scale: 1.1;
     transform: rotate(10deg);
@@ -515,8 +544,8 @@ section {
 }
 
 .quinta-secao__conteudo li div a {
-    background-color: var(--cor-03);
-    color: var(--cor-02);
+    background-color: var(--cor-04);
+    color: var(--cor-01);
     border-radius: 10px;
     font-size: 12px;
     text-decoration: none;
@@ -525,14 +554,15 @@ section {
 }
 
 .quinta-secao__conteudo li div a:hover{
-    background-color: var(--cor-04);
+    background-color: var(--cor-03);
+    color: var(--cor-04);
+    font-weight: bold;
 }
 
 /* SEXTA SECAO */
 .sexta-secao {
     background-color: var(--cor-03);
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 150px 25px 100px 25px;
 }
 
 .sexta-secao__conteudo {
@@ -545,6 +575,13 @@ section {
     font-family: var(--fonte-02);
     font-size: 42px;
     margin-bottom: 25px;
+}
+
+.sexta-secao__conteudo h4 {
+    font-family: var(--fonte-02);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .sexta-secao__conteudo p {
@@ -600,6 +637,8 @@ footer {
 .footer__conteudo {
     padding: 50px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     border-radius: 25px;
     border: 1px solid var(--cor-01);
@@ -666,4 +705,163 @@ footer h2 {
 
 .footer__conteudo form button:hover {
     background-color: var(--cor-03);
+}
+
+@media screen and (max-width: 1100px) {
+    #imagem-horta-06{
+        height: 100px;
+    }
+
+    #imagem-horta-05,
+    #imagem-horta-07{
+        height: 75px;
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        flex-direction: row-reverse;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    header:hover{
+        height: auto;
+    }
+
+    .navegacao__links{
+        flex-direction: column;
+        display: none;
+    }
+
+    header:hover .navegacao__links{
+        display: block;
+    }
+
+    .item__menu {
+        position: static;
+        padding: 20px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu-secoes:hover > .item__menu {
+        transform: translateX(0);
+    }
+
+    .menu__secao a{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .primeira-secao {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .primeira-secao__conteudo {
+        line-height: 20px;
+    }
+
+    #imagem-horta-01,
+    #imagem-horta-02,
+    #imagem-horta-03,
+    #imagem-horta-06,
+    #imagem-horta-09,
+    #imagem-horta-10,
+    #imagem-horta-11,
+    #imagem-horta-12{
+        height: 75px;
+    }
+
+    #imagem-horta-04{
+        height: 50px;
+        margin: 12.5px 0;
+    }
+
+    #imagem-horta-05,
+    #imagem-horta-07{
+        height: 55px;
+        margin-top: 20px;
+    }
+
+    #imagem-horta-08{
+        height: 55px;
+        margin: 10px 0;
+    }
+
+    .footer__conteudo div:first-child h2 {
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .primeira-secao__conteudo p:last-child{
+        display: none;
+    }
+
+    .primeira-secao__conteudo h2,
+    .segunda-secao__conteudo h2,
+    .terceira-secao__conteudo h2,
+    .quarta-secao__conteudo h2{
+        font-size: 36px;
+    }
+
+    .quarta-secao__conteudo__blocos li ul {
+        flex-direction: column;
+    }
+
+    #imagem-horta-01,
+    #imagem-horta-02,
+    #imagem-horta-03,
+    #imagem-horta-06,
+    #imagem-horta-09,
+    #imagem-horta-10,
+    #imagem-horta-11,
+    #imagem-horta-12{
+        height: 100px;
+    }
+
+    #imagem-horta-04{
+        height: 66px;
+        margin: 17px 0;
+    }
+
+    #imagem-horta-05,
+    #imagem-horta-07{
+        height: 75px;
+        margin-top: 27px;
+    }
+
+    #imagem-horta-08{
+        height: 75px;
+        margin: 13px 0;
+    }
+
+    .footer__conteudo{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__conteudo div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .primeira-secao__conteudo p:nth-child(2){
+        display: none;
+    }
+
+    .quinta-secao__conteudo__lista-projetos {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .quinta-secao__conteudo__lista-projetos li {
+        min-width: 350px;
+        max-width: 350px;
+    }
 }
